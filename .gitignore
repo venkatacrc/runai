@@ -1,0 +1,62 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.Python
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# --- Virtual envs (local CLI installs etc.) ---
+runai_env/
+.venv/
+venv/
+env/
+ENV/
+
+# --- Editor / OS noise ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Logs and run outputs ---
+*.log
+*.out
+nohup.out
+out/
+runs/
+checkpoints/
+wandb/
+tb_logs/
+events.out.tfevents.*
+
+# --- Profiler artifacts (can be large) ---
+trace_torch/
+trace_torch_phase3/
+*.nsys-rep
+*.nsys-rep.bak
+*.qdrep
+*.ncu-rep
+*.pt.trace.json
+
+# --- Model + dataset caches (never commit) ---
+hf-cache/
+.cache/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# --- Local secrets (paranoia) ---
+.env
+.env.*
+secrets.yaml
+hf_token*
+*.pem
+*.key
